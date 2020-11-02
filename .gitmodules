@@ -3,10 +3,11 @@
 	url = https://github.com/riscv/riscv-gnu-toolchain
 [submodule "riscv-pk"]
 	path = riscv-pk
-	url = https://github.com/keystone-enclave/riscv-pk
+	url = https://github.com/iaclab-hpme/riscv-pk
 [submodule "sdk"]
 	path = sdk
-	url = https://github.com/keystone-enclave/keystone-sdk
+	url = https://github.com/iaclab-hpme/keystone-sdk
+	branch = dev-hpme
 [submodule "linux-keystone-driver"]
 	path = linux-keystone-driver
 	url = https://github.com/keystone-enclave/linux-keystone-driver
