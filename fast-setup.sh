@@ -49,11 +49,12 @@ fi
 if [ ! -d buildroot ]; then
   git clone --shallow-since=2019-08-29 https://github.com/buildroot/buildroot.git buildroot
 fi
-if [ ! -d qemu ]; then
-  git clone --shallow-since=2018-08-14 https://github.com/qemu/qemu.git qemu
-fi
+# if [ ! -d qemu ]; then
+#   git clone --shallow-since=2018-08-14 https://github.com/qemu/qemu.git qemu
+# fi
 
 git config submodule.riscv-gnu-toolchain.update none
+git config submodule.qemu.update none
 
 git submodule sync --recursive
 git submodule update --init --recursive
