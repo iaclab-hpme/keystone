@@ -53,6 +53,8 @@ if [ ! -d qemu ]; then
   git clone --shallow-since=2018-08-14 https://github.com/qemu/qemu.git qemu
 fi
 
+git config submodule.riscv-gnu-toolchain.update none
+
 git submodule sync --recursive
 git submodule update --init --recursive
 
